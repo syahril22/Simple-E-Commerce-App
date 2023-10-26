@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "17829340876",
+    "project_id": "ecommerce-shoppers",
+    "storage_bucket": "ecommerce-shoppers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17829340876:android:1a24cf70920b3d2cf88469",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3s1rve2X9LHR539L5ZSv_I8zTb9Dercg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
