@@ -48,26 +48,24 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : SingleChildScrollView(
-                child: SingleChildScrollView(
+      body: Center(
+        child: SafeArea(
+          child: isLoading
+              ? const Center(child: CircularProgressIndicator())
+              : SingleChildScrollView(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 120, horizontal: 15),
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Form(
                           key: _formKey,
                           child: const Align(
-                            alignment: Alignment.centerLeft,
                             child: Padding(
                               padding: EdgeInsets.symmetric(horizontal: 25),
                               child: Form(
                                 child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Text(
                                       "WELCOME BACK !",
@@ -94,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         Container(
                           height: 336,
-                          width: 320,
+                          width: 330,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(40),
@@ -190,7 +188,7 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                                 SizedBox(
                                   height: 50,
-                                  width: 290,
+                                  width: MediaQuery.of(context).size.width,
                                   child: ElevatedButton(
                                     onPressed: () {
                                       if (_formKey.currentState!.validate()) {
@@ -247,7 +245,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-              ),
+        ),
       ),
     );
   }
